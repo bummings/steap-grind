@@ -1,0 +1,28 @@
+.menu {
+  background-color: $color-offwhite;
+  font-family: $font-secondary;
+  font-size: 3.5rem;
+
+  &--header {
+    border: 3px solid black;
+  }
+
+  &--item {
+
+    &__title {
+      text-transform: uppercase;
+      margin: 1rem;
+    }
+
+    &__price {
+
+    }
+
+    &__description {
+      margin: 0;
+      font-size: 2rem;
+      font-family: $font-primary;
+      color: $color-offblack;
+    }
+  }
+}

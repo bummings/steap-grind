@@ -1,5 +1,5 @@
 .about {
-  background-color: $color-offwhite;
+  background-color: $color-white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,10 +11,11 @@
     &__logo {
       height: 348px;
       width: 348px;
+      margin-right: 10rem;
     }
   }
   
-  &--about {
+  &--text {
     font-family: $font-primary;
     font-size: 3.6rem;
   }

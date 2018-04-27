@@ -1,7 +1,7 @@
 .footer {
   background-color: $color-primary;
   font-family: $font-primary;
-  height: 140px;
+  height: 10rem;
   display: flex;
   align-items: center;
 
@@ -11,6 +11,7 @@
   }
 
   &--address {
-    text-transform: uppercase;
+    justify-items: flex-end;
+    
   }
 }

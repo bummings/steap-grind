@@ -7,17 +7,18 @@
   align-items: center;
   font-family: $font-primary;
   background-image: url(../assets/img/social.jpg);
+  background-size: cover;
 
   display: flex;
   flex-direction: column;
 
   &--text {
-
+    
   }
 
   &--icons {
     display: flex;
-    
+
     &__icon {
       margin: 8rem;
     }
