@@ -29,14 +29,20 @@ html, body {
   display: flex;
   height: 115vh;
   background-color: orangered;
+  background-image: url("../assets/img/pourover.jpg");
+  background-size: cover;
   justify-content: center;
   align-items: center; }
   .hero--welcome {
-    font-size: 50px;
-    font-family: Didact Gothic; }
+    font-size: 6.4rem;
+    font-weight: 100;
+    font-family: Didact Gothic;
+    color: #ECF5E5;
+    letter-spacing: 3px;
+    margin-bottom: 20rem; }
 
 .about {
-  background-color: #ECF5E5;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,10 +50,26 @@ html, body {
   padding: 4rem 5rem; }
   .about--logo__logo {
     height: 348px;
-    width: 348px; }
-  .about--about {
+    width: 348px;
+    margin-right: 10rem; }
+  .about--text {
     font-family: Didact Gothic;
     font-size: 3.6rem; }
+
+.menu {
+  background-color: #ECF5E5;
+  font-family: Rokkitt;
+  font-size: 3.5rem; }
+  .menu--header {
+    border: 3px solid black; }
+  .menu--item__title {
+    text-transform: uppercase;
+    margin: 1rem; }
+  .menu--item__description {
+    margin: 0;
+    font-size: 2rem;
+    font-family: Didact Gothic;
+    color: #18191D; }
 
 .social {
   background-color: greenyellow;
@@ -58,6 +80,7 @@ html, body {
   align-items: center;
   font-family: Didact Gothic;
   background-image: url(../assets/img/social.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column; }
   .social--icons {
@@ -68,11 +91,11 @@ html, body {
 .footer {
   background-color: #F37878;
   font-family: Didact Gothic;
-  height: 140px;
+  height: 10rem;
   display: flex;
   align-items: center; }
   .footer--logo {
     height: 74px;
     width: 584px; }
   .footer--address {
-    text-transform: uppercase; }
+    justify-items: flex-end; }
