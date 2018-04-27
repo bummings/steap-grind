@@ -1,0 +1,78 @@
+html, body {
+  font-size: 10px;
+  margin: 0;
+  padding: 0; }
+
+.header {
+  background-color: #F37878;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1;
+  justify-items: center;
+  align-items: center;
+  font-family: Didact Gothic;
+  font-size: 1.5rem;
+  height: 120px; }
+  .header--logo {
+    font-family: 'Gill Sans';
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header--logo__logo {
+      height: 59px;
+      width: 465px; }
+  .header--hours {
+    font-family: 'Helvetica';
+    text-transform: uppercase; }
+
+.hero {
+  display: flex;
+  height: 115vh;
+  background-color: orangered;
+  justify-content: center;
+  align-items: center; }
+  .hero--welcome {
+    font-size: 50px;
+    font-family: Didact Gothic; }
+
+.about {
+  background-color: #ECF5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  padding: 4rem 5rem; }
+  .about--logo__logo {
+    height: 348px;
+    width: 348px; }
+  .about--about {
+    font-family: Didact Gothic;
+    font-size: 3.6rem; }
+
+.social {
+  background-color: greenyellow;
+  font-size: 4.8rem;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Didact Gothic;
+  background-image: url(../assets/img/social.jpg);
+  display: flex;
+  flex-direction: column; }
+  .social--icons {
+    display: flex; }
+    .social--icons__icon {
+      margin: 8rem; }
+
+.footer {
+  background-color: #F37878;
+  font-family: Didact Gothic;
+  height: 140px;
+  display: flex;
+  align-items: center; }
+  .footer--logo {
+    height: 74px;
+    width: 584px; }
+  .footer--address {
+    text-transform: uppercase; }

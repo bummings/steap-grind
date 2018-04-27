@@ -1,0 +1,22 @@
+.about {
+  background-color: $color-offwhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+  padding: 4rem 5rem;
+  
+  &--logo {
+
+    &__logo {
+      height: 348px;
+      width: 348px;
+    }
+  }
+  
+  &--about {
+    font-family: $font-primary;
+    font-size: 3.6rem;
+  }
+
+}

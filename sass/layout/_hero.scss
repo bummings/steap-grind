@@ -1,0 +1,14 @@
+.hero {
+  display: flex;
+  height: 115vh;
+  background-color: orangered;
+  
+  // background-image: url('../assets/img/pourover.jpg');
+  justify-content: center;
+  align-items: center;
+
+  &--welcome {
+    font-size: 50px;
+    font-family: $font-primary;
+  }
+}

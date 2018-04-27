@@ -1,0 +1,25 @@
+.social {
+  background-color: greenyellow;
+  font-size: 4.8rem;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-primary;
+  background-image: url(../assets/img/social.jpg);
+
+  display: flex;
+  flex-direction: column;
+
+  &--text {
+
+  }
+
+  &--icons {
+    display: flex;
+    
+    &__icon {
+      margin: 8rem;
+    }
+  }
+}

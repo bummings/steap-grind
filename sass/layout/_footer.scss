@@ -1,0 +1,16 @@
+.footer {
+  background-color: $color-primary;
+  font-family: $font-primary;
+  height: 140px;
+  display: flex;
+  align-items: center;
+
+  &--logo {
+    height: 74px;
+    width: 584px;
+  }
+
+  &--address {
+    text-transform: uppercase;
+  }
+}

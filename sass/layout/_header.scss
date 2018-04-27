@@ -1,0 +1,34 @@
+.header {
+    background-color: $color-primary;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    justify-items: center;
+    align-items: center;
+    font-family: $font-primary;
+    font-size: 1.5rem;
+    height: 120px;
+
+
+    &--address {
+        
+    }
+
+    &--logo {
+        font-family: 'Gill Sans';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__logo {
+            height: 59px;
+            width: 465px;
+        }
+    }
+
+    &--hours {
+        font-family: 'Helvetica';
+        text-transform: uppercase;
+    }
+}
+
