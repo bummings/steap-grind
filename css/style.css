@@ -13,6 +13,14 @@ html, body {
   font-family: Didact Gothic;
   font-size: 1.5rem;
   height: 120px; }
+  .header--address {
+    line-height: 0px; }
+    .header--address__box {
+      display: flex;
+      flex-direction: row; }
+  .header--icon {
+    height: 2rem;
+    width: 2rem; }
   .header--logo {
     font-family: 'Gill Sans';
     display: flex;
@@ -23,7 +31,7 @@ html, body {
       width: 465px; }
   .header--hours {
     font-family: 'Helvetica';
-    text-transform: uppercase; }
+    line-height: 0px; }
 
 .hero {
   display: flex;
@@ -59,7 +67,8 @@ html, body {
 .menu {
   background-color: #ECF5E5;
   font-family: Rokkitt;
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  border: 5px solid black; }
   .menu--header {
     border: 3px solid black; }
   .menu--item__title {
@@ -79,14 +88,17 @@ html, body {
   justify-content: center;
   align-items: center;
   font-family: Didact Gothic;
-  background-image: url(../assets/img/social.jpg);
+  background-image: url(../assets/img/social-min.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column; }
+  .social--text {
+    margin-bottom: 5rem; }
   .social--icons {
-    display: flex; }
+    display: flex;
+    margin-bottom: 5rem; }
     .social--icons__icon {
-      margin: 8rem; }
+      margin: 0 8rem; }
 
 .footer {
   background-color: #F37878;

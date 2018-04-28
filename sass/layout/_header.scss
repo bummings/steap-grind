@@ -10,8 +10,19 @@
     height: 120px;
 
 
+
     &--address {
+        line-height: 0px;    
         
+        &__box {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &--icon {
+        height: 2rem;
+        width: 2rem;
     }
 
     &--logo {
@@ -28,7 +39,7 @@
 
     &--hours {
         font-family: 'Helvetica';
-        text-transform: uppercase;
+        line-height: 0px;
     }
 }
 

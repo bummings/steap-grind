@@ -6,21 +6,22 @@
   justify-content: center;
   align-items: center;
   font-family: $font-primary;
-  background-image: url(../assets/img/social.jpg);
+  background-image: url(../assets/img/social-min.jpg);
   background-size: cover;
 
   display: flex;
   flex-direction: column;
 
   &--text {
-    
+    margin-bottom: 5rem;
   }
 
   &--icons {
     display: flex;
+    margin-bottom: 5rem;
 
     &__icon {
-      margin: 8rem;
+      margin: 0 8rem;
     }
   }
 }
