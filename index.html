@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Rokkitt:400,700" rel="stylesheet">
+  <title>Steap & Grind</title>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Gothic+A1:300,400" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,43 +15,59 @@
 
 
     <!-- Top menu   -->
+    <!-- this should be a nav element -->
     <header class='header'>
       <div class="header--address__box">
-          <div class="header--address">
-              <img class="header--icon" src="assets/img/mappin.png" alt="map pin"><p>1619 Frankford Ave.</p>
-              <p>Phila, PA 19143</p>
+        <img class="header--icon" src="assets/img/mappin.png" alt="map pin">
+        <div class="header--address">
+          <p>1619 Frankford Ave.</p>
+          <p>Phila, PA 19143</p>
+        </div>
       </div>
-      
+
+      <!-- <nav class="nav">
+        <nav class="nav--address">
+          <nav class="nav--address__icon">
+            <img class="nav--icon" src="assets/img/mappin.png" alt="map pin">
+          </nav>
+          <nav class="nav--address__address">
+            <p>1619 Frankford Ave.</p>
+            <p>Phila, PA 19143</p>
+          </nav>
+        </nav>
+      </nav> -->
+
       <div class="header--phone__box">
-          <img class="header--icon" src="assets/img/phone.png" alt="telephone"><p>(267) 858-4427</p>
+        <img class="header--icon" src="assets/img/phone.png" alt="telephone">
+        <p>(267) 858-4427</p>
       </div>
-      
-      </div>
-      <div class="header--logo">
-        <img class="header--logo__logo" src="assets/img/logo2.png" alt="logo">
-      </div>
-      <div class="header--hours">
-        <p>Mon-Fri 7A-6P</p>
-        <p>Sat-Sun 8A-6P</p>
-      </div>
-    </header>
+
+  </div>
+  <div class="header--logo">
+    <img class="header--logo__logo" src="assets/img/logo2.png" alt="logo">
+  </div>
+  <div class="header--hours">
+    <p>Mon-Fri 7A-6P</p>
+    <p>Sat-Sun 8A-6P</p>
+  </div>
+  </header>
 
 
-    <!-- Hero image -->
-    <div class="hero">
-      <h2 class='hero--welcome'>Welcome to your neighborhood cafe.</h2>
+  <!-- Hero image -->
+  <section class="hero">
+    <h2 class='hero--welcome'>Welcome to your neighborhood cafe.</h2>
+  </section>
+
+  <section class="about">
+    <div class="about--logo">
+      <img class="about--logo__logo" src="assets/img/logored.png" alt="logo">
     </div>
-
-    <div class="about">
-      <div class="about--logo">
-        <img class="about--logo__logo" src="assets/img/logored.png" alt="logo">
-      </div>
-      <div class="about--text">
-        <p>Located in Fishtown, Philadelphia, Steap & Grind is a local destination for an unmatched curation of exotic teas
-          from around the world, an extensive and locally-sourced menu for all times of day as well as Philadelphia's debut
-          venue for Brooklyn-based roaster Gimme! Coffee. We're dog-friendly, too- bring your pup in for a treat!</p>
-      </div>
+    <div class="about--text">
+      <p>Located in Fishtown, Philadelphia, Steap & Grind is a local destination for an unmatched curation of exotic teas from
+        around the world, an extensive and locally-sourced menu for all times of day as well as Philadelphia's debut venue
+        for Brooklyn-based roaster Gimme! Coffee. We're dog-friendly, too- bring your pup in for a treat!</p>
     </div>
+  </section>
 
 
 
@@ -60,56 +76,156 @@
 
 
 
+  <section class="menu">
+    <!-- <img src="assets/img/menu.png" alt=""> -->
+    <div class="menu--item__section">Sandwiches</div>
 
 
-    <div class="menu">
-      <!-- <h2 class="menu--header">Menu</h2>
-
-      <div class="menu--item">
-        <h3 class="menu--item__title">Classic 7</h3>
-        <h3 class="menu--item__description">brioche + american + tomato + melted</h3>
+    <div class="menu--item__item">
+      <div class="menu--item__item--name">
+        Melter Skelter <span class='menu--item__item--price'>8</span>
       </div>
-
-      <div class="menu--item">
-        <h3 class="menu--item__title">Classic 7</h3>
-        <h3 class="menu--item__description">brioche + american + tomato + melted</h3>
-      </div>
-
-      <div class="menu--item">
-        <h3 class="menu--item__title">Classic 7</h3>
-        <h3 class="menu--item__description">brioche + american + tomato + melted</h3>
-      </div>
-
-      <div class="menu--item">
-        <h3 class="menu--item__title">Classic 7</h3>
-        <h3 class="menu--item__description">brioche + american + tomato + melted</h3>
-      </div> -->
-
-      <img src="assets/img/menu.png" alt="">
-    </div>
-
-
-    <div class="social">
-      <div class="social--text">
-        <h2>Let's be social!</h2>
-      </div>
-      <div class="social--icons">
-        <img class="social--icons__icon" src="assets/img/facebook.png" alt="Facebook">
-        <img class="social--icons__icon" src="assets/img/twitter.png" alt="Twitter">
-        <img class="social--icons__icon" src="assets/img/instagram.png" alt="Instagram">
+      <div class="menu--item__item--description">
+        multigrain · fig jam · sharp cheddar
       </div>
     </div>
 
-
-
-    <div class="footer">
-      <div class="footer--image">
-        <img class="footer--logo" src="assets/img/logo2.png" alt="steap logo">
+    <div class="menu--item__item">
+      <div class="menu--item__item--name">
+        Oxford <span class='menu--item__item--price'>9</span>
       </div>
-      <div class="footer--address">
-        1619 Frankford Avenue
+      <div class="menu--item__item--description">
+        raisin pecan bread · ham · brie · honey
       </div>
     </div>
+
+    <div class="menu--item__item">
+      <div class="menu--item__item--name">
+        Classic <span class='menu--item__item--price'>7</span>
+      </div>
+      <div class="menu--item__item--description">
+        brioche · american · tomato
+      </div>
+    </div>
+
+    <div class="menu--item__item">
+      <div class="menu--item__item--name">
+        Toaster <span class='menu--item__item--price'>10</span>
+      </div>
+      <div class="menu--item__item--description">
+        multigrain · sharp cheddar · tomato · avocado
+      </div>
+    </div>
+
+    <div class="menu--item__item">
+      <div class="menu--item__item--name">
+        Palmer <span class='menu--item__item--price'>10</span>
+      </div>
+      <div class="menu--item__item--description">
+        multigrain · homemade tuna salad · provolone
+      </div>
+    </div>
+
+    <div class="menu--item__item">
+      <div class="menu--item__item--name">
+        Springtime <span class='menu--item__item--price'>8</span>
+      </div>
+      <div class="menu--item__item--description">
+        sourdough · sprouts · tomato · pesto · mozzarella
+      </div>
+    </div>
+
+    <div class="menu--item__item">
+      <div class="menu--item__item--name">
+        Mikey <span class='menu--item__item--price'>9</span>
+      </div>
+      <div class="menu--item__item--description">
+        sourdough · turkey · tomato chutney · romaine · onion · provolone
+      </div>
+    </div>
+
+    <div class="menu--item__item">
+      <div class="menu--item__item--name">
+        Curry "Chicken" <span class='menu--item__item--price'>10</span>
+      </div>
+      <div class="menu--item__item--description">
+        toasted multigrain · homemade curry "chicken" salad · romaine
+      </div>
+    </div>
+
+    <div class="menu--item__item">
+      <div class="menu--item__item--name">
+        Veg <span class='menu--item__item--price'>8</span>
+      </div>
+      <div class="menu--item__item--description">
+        multigrain · homemade hummus · cucumber · avocado · sprouts
+      </div>
+    </div>
+
+    <div class="menu--item__item">
+      <div class="menu--item__item--name">
+        B.L.A.T. <span class='menu--item__item--price'>10</span>
+      </div>
+      <div class="menu--item__item--description">
+        toasted multigrain · basil · mayo · bacon · lettuce · avocado · tomato
+      </div>
+    </div>
+
+    <div class="menu--item__item">
+      <div class="menu--item__item--name">
+        The Kensington <span class='menu--item__item--price'>10</span>
+      </div>
+      <div class="menu--item__item--description">
+        sourdough · ham · saffron · chutney · mustard · cheddar
+      </div>
+    </div>
+    
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <section class="findus">
+    <div class="findus--map">
+      <img src="assets/img/map-invert.png" alt="">
+    </div>
+    <div class="findus--text">
+      We are located in the heart of Fishtown at 1619 Franford Avenue, across from Palmer Park and a 2 minute walk from the Girard
+      stop. Look for the big, beautiful brick building.
+    </div>
+  </section>
+
+
+
+
+  <section class="social">
+    <div class="social--text">
+      <h2>Let's be social!</h2>
+    </div>
+    <div class="social--icons">
+      <img class="social--icons__icon" src="assets/img/facebook.png" alt="Facebook">
+      <img class="social--icons__icon" src="assets/img/twitter.png" alt="Twitter">
+      <img class="social--icons__icon" src="assets/img/instagram.png" alt="Instagram">
+    </div>
+  </section>
+
+
+
+  <section class="footer">
+    <div class="footer--image">
+      <img class="footer--logo" src="assets/img/logo2.png" alt="steap logo">
+    </div>
+    <div class="footer--address">
+      1619 Frankford Avenue
+    </div>
+  </section>
 
   </div>
 

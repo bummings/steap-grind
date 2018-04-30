@@ -1,29 +1,86 @@
 .menu {
-  background-color: $color-offwhite;
-  font-family: $font-secondary;
-  font-size: 3.5rem;
-  border: 5px solid black;
 
-  &--header {
-    border: 3px solid black;
-  }
+  height: 100vh;
 
+  display: grid;
+  grid-column: center-start / center-end;
+  padding: 10rem 5rem;
+
+  // grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  // grid-gap: 7rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-row-gap: 1rem;
+  grid-column-gap: 8rem;
+
+  background-color: #F5FAF4;
+  
   &--item {
 
-    &__title {
+    &__section {
+      // font-family: $font-secondary;
+      font-family: 'Dense';
       text-transform: uppercase;
-      margin: 1rem;
+      color: $color-secondary;
+      font-size: 7.3rem;
     }
 
-    // &__price {
+    &__item {
+      // border: 5px solid red;
 
-    // }
+      &--name {
+        // font-family: $font-primary;
+        font-family: 'Dense';
+        text-transform: uppercase;
+        // font-size: 3.2rem;
+        font-size: 5.3rem;
+      }
 
-    &__description {
-      margin: 0;
-      font-size: 2rem;
-      font-family: $font-primary;
-      color: $color-offblack;
+      &--price {
+        margin-left: 4rem;
+        color: $color-primary;
+        font-size: 3rem;
+        // align-self: center;  ????
+      }
+
+      &--description {
+        font-family: $font-primary;
+        font-size: 2rem;
+        color: $color-grey;
+      }
     }
   }
+
+
+
+
+
+
+
+
+
+
+  // border: 5px solid black;
+
+  // &--header {
+  //   border: 3px solid black;
+  // }
+
+  // &--item {
+
+  //   &__title {
+  //     text-transform: uppercase;
+  //     margin: 1rem;
+  //   }
+
+  //   // &__price {
+
+  //   // }
+
+  //   &__description {
+  //     margin: 0;
+  //     font-size: 2rem;
+  //     font-family: $font-primary;
+  //     color: $color-offblack;
+  //   }
+  // }
 }

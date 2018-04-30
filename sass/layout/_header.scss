@@ -10,14 +10,8 @@
     height: 120px;
 
 
-
     &--address {
         line-height: 0px;    
-        
-        &__box {
-            display: flex;
-            flex-direction: row;
-        }
     }
 
     &--icon {
@@ -26,7 +20,6 @@
     }
 
     &--logo {
-        font-family: 'Gill Sans';
         display: flex;
         justify-content: center;
         align-items: center;

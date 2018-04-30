@@ -1,0 +1,17 @@
+.nav {
+
+  &--address {
+    display: flex;
+    line-height: 0px;
+
+    &__icon {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    &__address {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

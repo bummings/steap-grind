@@ -1,0 +1,19 @@
+.findus {
+  background-color: $color-secondary;
+  color: $color-offblack;
+  height: 75vh;
+  font-size: 3.6rem;
+  font-family: $font-primary;
+  display: flex;
+  align-items: center;
+
+  &--map {
+    padding: 3rem;
+  }
+
+  &--text {
+    padding: 5rem;
+    padding-right: 12rem;
+
+  }
+}
