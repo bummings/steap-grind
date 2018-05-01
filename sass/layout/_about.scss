@@ -12,6 +12,25 @@
       height: 348px;
       width: 348px;
       margin-right: 10rem;
+
+      @include respond(tab-land) {
+        border: 5px dotted black;
+        height: 200px;
+        width: 200px;
+      }
+
+      @include respond(tab-port) {
+        border: 5px solid red;
+        height: 150px;
+        width: 150px;
+      }
+
+
+      
+      @include respond(phone) {
+        height: 100px;
+        width: 100px;
+      }
     }
   }
   

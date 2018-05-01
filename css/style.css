@@ -1,17 +1,61 @@
-html, body {
-  font-size: 10px;
-  margin: 0;
-  padding: 0; }
+/* 0-600px: phone
+// 600-900px: tablet portrait
+// 900-1200px: tablet landscape
+// 1200-1800: (normal)
+// 1800+: large desktop
 
-.nav--address {
-  display: flex;
-  line-height: 0px; }
-  .nav--address__icon {
-    height: 3rem;
-    width: 3rem; }
-  .nav--address__address {
+$breakoint argument choices-
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 10px; }
+  @media (max-width: 56.25em) {
+    html {
+      text-transform: uppercase; } }
+
+body {
+  box-sizing: border-box; }
+
+.nav {
+  background-color: #F37878;
+  font-family: Didact Gothic;
+  padding: 0, 3rem;
+  display: grid;
+  grid-column: full-start / full-end;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 2.5rem;
+  justify-items: center;
+  align-items: center; }
+  .nav__contact {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2; }
+  .nav__logo {
+    grid-row: 1 / -1;
+    grid-column: 2 / span 3;
     display: flex;
-    flex-direction: column; }
+    justify-content: center;
+    align-items: center; }
+    .nav__logo--logo {
+      height: 85%;
+      width: 85%; }
+  .nav__hours {
+    grid-row: 1 / -1;
+    grid-column: 5 / 6; }
+  .nav__icon {
+    height: 5%;
+    width: 5%; }
 
 .header {
   background-color: #F37878;
@@ -44,16 +88,31 @@ html, body {
   height: 115vh;
   background-image: url("../assets/img/pourover.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: stretch;
+  background-position: center;
   background-color: #F87779;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-weight: 100;
+  font-family: Didact Gothic;
+  letter-spacing: 3px; }
   .hero--welcome {
-    font-size: 6.4rem;
-    font-weight: 100;
-    font-family: Didact Gothic;
-    color: #ECF5E5;
-    letter-spacing: 3px;
-    margin-bottom: 20rem; }
+    background-color: orange; }
+    @media (max-width: 112.5em) {
+      .hero--welcome {
+        background: white; } }
+    @media (max-width: 75em) {
+      .hero--welcome {
+        background-color: green; } }
+    @media (max-width: 56.25em) {
+      .hero--welcome {
+        background-color: red;
+        color: black;
+        font-family: 'courier'; } }
+    @media (max-width: 40em) {
+      .hero--welcome {
+        background-color: blue; } }
 
 .about {
   background-color: #fff;
@@ -66,6 +125,20 @@ html, body {
     height: 348px;
     width: 348px;
     margin-right: 10rem; }
+    @media (max-width: 75em) {
+      .about--logo__logo {
+        border: 5px dotted black;
+        height: 200px;
+        width: 200px; } }
+    @media (max-width: 56.25em) {
+      .about--logo__logo {
+        border: 5px solid red;
+        height: 150px;
+        width: 150px; } }
+    @media (max-width: 40em) {
+      .about--logo__logo {
+        height: 100px;
+        width: 100px; } }
   .about--text {
     font-family: Didact Gothic;
     font-size: 3.6rem; }
@@ -101,15 +174,20 @@ html, body {
   background-color: #37E3C4;
   color: #18191D;
   height: 75vh;
-  font-size: 3.6rem;
   font-family: Didact Gothic;
   display: flex;
   align-items: center; }
   .findus--map {
     padding: 3rem; }
+    @media (max-width: 40em) {
+      .findus--map__map {
+        height: 100px;
+        width: 100px; } }
   .findus--text {
     padding: 5rem;
     padding-right: 12rem; }
+    .findus--text__text {
+      font-size: 2.5rem; }
 
 .social {
   background-color: greenyellow;

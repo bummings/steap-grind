@@ -1,18 +1,47 @@
 .hero {
   display: flex;
   height: 115vh;
+  
   background-image: url('../assets/img/pourover.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: stretch;
+  background-position: center;
+
   background-color: #F87779;
   justify-content: center;
   align-items: center;
 
-  &--welcome {
-    font-size: 6.4rem;
+    // font-size: 6.4rem;
+    
     font-weight: 100;
     font-family: $font-primary;
-    color: $color-offwhite;
+    // color: $color-offwhite;
     letter-spacing: 3px;
-    margin-bottom: 20rem;
+    // margin-bottom: 20rem;
+
+  &--welcome {
+    background-color: orange;
+    @include respond(laptop) {
+      background: white;
+    }
+    
+    @include respond(tab-land) {
+      background-color: green;
+    }
+    
+    @include respond(tab-port) {
+      background-color: red;
+      color: black;
+      font-family: 'courier';
+    }
+
+    @include respond(phone) {
+      background-color: blue;
+    }
+
+    @include respond(xsmall) {
+      color: white;  
+    }
   }
 }

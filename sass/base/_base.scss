@@ -1,5 +1,38 @@
-html, body {
-  font-size: 10px;
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // font-size: 62.5%;  fuck this 
+  // 1 rem = 10px; 10px/16x = 62.5
+  font-size: 10px;
+
+  @include respond(laptop) {
+    
+  }
+
+  @include respond(tab-land) {
+    // font-size: 
+  }
+
+  @include respond(tab-port) {
+    // font-size: 25% !important;
+    text-transform: uppercase;
+  }
+
+  @include respond(phone) {
+    // font-size: 15% !important;
+  }
+
+  @include respond(big-desktop) {
+    // font-size: 75% !important;
+  }
+}
+
+body {
+  box-sizing: border-box;
 }
