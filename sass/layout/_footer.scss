@@ -1,17 +1,55 @@
 .footer {
   background-color: $color-primary;
   font-family: $font-primary;
-  height: 10rem;
+  font-size: 1.8rem;
+  height: 13rem;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+
+  @include respond(tab-land) {
+    height: 10rem;
+  }
+
+  @include respond(tab-port) {
+    height: 7.5rem;
+    font-size: 1.2rem;
+  }
+
+  @include respond(phone) {
+    height: 5rem;
+    font-size: .5rem;
+  }
+
+  
+    
+    
 
   &--logo {
     height: 74px;
     width: 584px;
+
+    @include respond (tab-land) {
+      height: 55.5px;
+      width: 428px;
+    }
+
+    @include respond(tab-port) {
+      height: 48.1px;
+      width: 379.6px;
+    }
+
+    @include respond(phone) {
+      height: 25.9px;
+      width: 204.4px;
+    }
   }
 
   &--address {
-    justify-items: flex-end;
+    
+    @include respond(phone) {
+      text-transform: uppercase;
+    }
     
   }
 }

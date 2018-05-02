@@ -1,13 +1,11 @@
 .menu {
 
-  height: 100vh;
+  // height: 100vh;
 
   display: grid;
   grid-column: center-start / center-end;
   padding: 10rem 5rem;
 
-  // grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  // grid-gap: 7rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-row-gap: 1rem;
   grid-column-gap: 8rem;
@@ -22,24 +20,48 @@
       text-transform: uppercase;
       color: $color-secondary;
       font-size: 7.3rem;
+
+      @include respond(tab-port) {
+        font-size: 5rem;
+      }
+
+      @include respond(phone) {
+        font-size: 4.5rem;
+      }
     }
 
     &__item {
-      // border: 5px solid red;
+      @include respond(tab-port) {
+        margin-bottom: 4rem;
+      }
 
       &--name {
         // font-family: $font-primary;
         font-family: 'Dense';
         text-transform: uppercase;
-        // font-size: 3.2rem;
         font-size: 5.3rem;
+
+        @include respond(tab-port) {
+          font-size: 4rem;
+        }
+
+        @include respond(phone) {
+          font-size: 3.5rem;
+        }
       }
 
       &--price {
         margin-left: 4rem;
         color: $color-primary;
-        font-size: 3rem;
-        // align-self: center;  ????
+        font-size: 3.6rem;
+
+        @include respond(tab-port) {
+          font-size: 3rem;
+        }
+
+        @include respond(phone) {
+          font-size: 2.8rem;
+        }
       }
 
       &--description {
@@ -49,38 +71,4 @@
       }
     }
   }
-
-
-
-
-
-
-
-
-
-
-  // border: 5px solid black;
-
-  // &--header {
-  //   border: 3px solid black;
-  // }
-
-  // &--item {
-
-  //   &__title {
-  //     text-transform: uppercase;
-  //     margin: 1rem;
-  //   }
-
-  //   // &__price {
-
-  //   // }
-
-  //   &__description {
-  //     margin: 0;
-  //     font-size: 2rem;
-  //     font-family: $font-primary;
-  //     color: $color-offblack;
-  //   }
-  // }
 }

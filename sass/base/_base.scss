@@ -16,16 +16,16 @@ html {
   }
 
   @include respond(tab-land) {
-    color: red
+    // color: red
   }
 
   @include respond(tab-port) {
-    color: green;
+    // color: green;
     
   }
 
   @include respond(phone) {
-    color: blue;
+    // color: blue;
   }
 
   @include respond(big-desktop) {
