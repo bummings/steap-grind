@@ -22,26 +22,27 @@
 
   &--welcome {
     background-color: orange;
+    
     @include respond(laptop) {
       background: white;
+      font-size: 4.8rem;
     }
     
     @include respond(tab-land) {
       background-color: green;
+      font-size: 4rem;
     }
     
     @include respond(tab-port) {
+      font-size: 3rem;
       background-color: red;
       color: black;
       font-family: 'courier';
     }
 
     @include respond(phone) {
+      font-size: 2rem;
       background-color: blue;
-    }
-
-    @include respond(xsmall) {
-      color: white;  
     }
   }
 }

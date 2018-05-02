@@ -4,14 +4,14 @@
   justify-content: center;
   align-items: center;
   border: 5px solid black;
-  padding: 4rem 5rem;
+  // padding: 4rem 5rem;
   
   &--logo {
 
     &__logo {
       height: 348px;
       width: 348px;
-      margin-right: 10rem;
+      // margin-right: 10rem;
 
       @include respond(tab-land) {
         border: 5px dotted black;
@@ -24,19 +24,16 @@
         height: 150px;
         width: 150px;
       }
-
-
       
-      @include respond(phone) {
-        height: 100px;
-        width: 100px;
-      }
+      // @include respond(phone) {
+      //   height: 100px;
+      //   width: 100px;
+      // }
     }
   }
   
   &--text {
     font-family: $font-primary;
-    font-size: 3.6rem;
   }
 
 }

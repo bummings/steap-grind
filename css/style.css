@@ -20,10 +20,16 @@ $breakoint argument choices-
   box-sizing: inherit; }
 
 html {
-  font-size: 10px; }
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      color: red; } }
   @media (max-width: 56.25em) {
     html {
-      text-transform: uppercase; } }
+      color: green; } }
+  @media (max-width: 40em) {
+    html {
+      color: blue; } }
 
 body {
   box-sizing: border-box; }
@@ -101,17 +107,21 @@ body {
     background-color: orange; }
     @media (max-width: 112.5em) {
       .hero--welcome {
-        background: white; } }
+        background: white;
+        font-size: 4.8rem; } }
     @media (max-width: 75em) {
       .hero--welcome {
-        background-color: green; } }
+        background-color: green;
+        font-size: 4rem; } }
     @media (max-width: 56.25em) {
       .hero--welcome {
+        font-size: 3rem;
         background-color: red;
         color: black;
         font-family: 'courier'; } }
     @media (max-width: 40em) {
       .hero--welcome {
+        font-size: 2rem;
         background-color: blue; } }
 
 .about {
@@ -119,12 +129,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid black;
-  padding: 4rem 5rem; }
+  border: 5px solid black; }
   .about--logo__logo {
     height: 348px;
-    width: 348px;
-    margin-right: 10rem; }
+    width: 348px; }
     @media (max-width: 75em) {
       .about--logo__logo {
         border: 5px dotted black;
@@ -135,13 +143,8 @@ body {
         border: 5px solid red;
         height: 150px;
         width: 150px; } }
-    @media (max-width: 40em) {
-      .about--logo__logo {
-        height: 100px;
-        width: 100px; } }
   .about--text {
-    font-family: Didact Gothic;
-    font-size: 3.6rem; }
+    font-family: Didact Gothic; }
 
 .menu {
   height: 100vh;
