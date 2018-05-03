@@ -152,11 +152,17 @@ body {
 .menu {
   display: grid;
   grid-column: center-start / center-end;
-  padding: 10rem 5rem;
+  padding: 10rem 7rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-row-gap: 1rem;
   grid-column-gap: 8rem;
   background-color: #F5FAF4; }
+  @media (max-width: 56.25em) {
+    .menu {
+      padding: 2rem 3rem; } }
+  @media (max-width: 40em) {
+    .menu {
+      padding: 1rem 3rem; } }
   .menu--item__section {
     font-family: 'Dense';
     text-transform: uppercase;
@@ -182,19 +188,27 @@ body {
       .menu--item__item--name {
         font-size: 3.5rem; } }
   .menu--item__item--price {
-    margin-left: 4rem;
+    margin-left: 3.5rem;
     color: #F37878;
     font-size: 3.6rem; }
     @media (max-width: 56.25em) {
       .menu--item__item--price {
+        margin-left: 1.5rem;
         font-size: 3rem; } }
     @media (max-width: 40em) {
       .menu--item__item--price {
-        font-size: 2.8rem; } }
+        font-size: 2.8rem;
+        margin-left: 1rem; } }
   .menu--item__item--description {
     font-family: Didact Gothic;
     font-size: 2rem;
     color: #595B58; }
+    @media (max-width: 56.25em) {
+      .menu--item__item--description {
+        font-size: 1.6rem; } }
+    @media (max-width: 40em) {
+      .menu--item__item--description {
+        font-size: 1.4rem; } }
 
 .findus {
   background-color: #F37878;
@@ -204,7 +218,8 @@ body {
   display: flex;
   align-items: center;
   padding-left: 3rem;
-  padding-right: 12rem; }
+  padding-right: 12rem;
+  border: 5px solid #18191D; }
   @media (max-width: 56.25em) {
     .findus {
       padding-right: 2rem; } }
@@ -233,10 +248,10 @@ body {
       font-size: 2.5rem; }
       @media (max-width: 56.25em) {
         .findus--text__text {
-          font-size: 1.8rem; } }
+          font-size: 3.2rem; } }
       @media (max-width: 40em) {
         .findus--text__text {
-          font-size: 1rem; } }
+          font-size: 2rem; } }
 
 .social {
   background-color: greenyellow;
