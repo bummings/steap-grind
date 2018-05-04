@@ -118,7 +118,12 @@ body {
   padding: 4rem 5rem; }
   @media (max-width: 56.25em) {
     .about {
-      padding: .5rem; } }
+      padding: .5rem;
+      display: block; } }
+  @media (max-width: 40em) {
+    .about {
+      padding: 1rem;
+      display: block; } }
   .about--logo__logo {
     height: 348px;
     width: 348px;
@@ -134,8 +139,12 @@ body {
         margin-right: 1rem; } }
     @media (max-width: 40em) {
       .about--logo__logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         height: 200px;
-        width: 200px; } }
+        width: 200px;
+        padding: 2rem; } }
   .about--text {
     font-family: Didact Gothic;
     font-size: 3rem; }
@@ -202,7 +211,8 @@ body {
   .menu--item__item--description {
     font-family: Didact Gothic;
     font-size: 2rem;
-    color: #595B58; }
+    color: #595B58;
+    padding-right: 2rem; }
     @media (max-width: 56.25em) {
       .menu--item__item--description {
         font-size: 1.6rem; } }
@@ -222,11 +232,13 @@ body {
   border: 5px solid #18191D; }
   @media (max-width: 56.25em) {
     .findus {
-      padding-right: 2rem; } }
+      padding-right: 2rem;
+      display: block; } }
   @media (max-width: 40em) {
     .findus {
       padding-right: .5rem;
-      padding-left: 1rem; } }
+      padding-left: 1rem;
+      display: block; } }
   @media (max-width: 75em) {
     .findus--map__map {
       height: 311.2px;
@@ -251,7 +263,7 @@ body {
           font-size: 3.2rem; } }
       @media (max-width: 40em) {
         .findus--text__text {
-          font-size: 2rem; } }
+          font-size: 1.5rem; } }
 
 .social {
   background-color: greenyellow;
