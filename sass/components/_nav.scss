@@ -4,16 +4,19 @@
   padding: 1rem 3rem;
 
   display: grid;
+  grid-template-columns: 6 / 1fr;
   grid-column: full-start / full-end;
   grid-auto-columns: 1fr;
   grid-column-gap: 2.5rem;
   justify-items: center;
   align-items: center;
 
+  @include respond(phone) {
+    grid-column-gap: .5rem;
+    padding: 0;
+  }
 
-
-  &__contact {
-      
+  &__contact { 
       grid-row: 1 / span 1;
       grid-column: 1 / 2;
       font-size: 1.8rem;
@@ -29,28 +32,36 @@
       @include respond (phone) {
         font-size: 1rem;
         grid-row: 2 / span 1;
-        grid-column: 2 / 4;
-        display: inline-block;
+        grid-column: 1 / 1;
+        justify-content: start;
+        // display: inline-block;
       }
   }
 
   &__logo {
     grid-row: 1 / span 1;
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    &--logo {
-      height: 85%;
-      width: 85%;
+    @include respond(phone) {
+      grid-row: 2 / 3;
+      grid-column: 2 / 5;
     }
+  
+
+    &--logo {
+      height: 100%;
+      width: 100%;
+    }
+  }
 
 
     &__hours {
       grid-row: 1 / span 1;
-      grid-column: 3 / 5;
+      grid-column: 4 / 5;
 
       font-size: 1.8rem;
 
@@ -65,9 +76,8 @@
       @include respond (phone) {
         font-size: 1rem;
         grid-row: 2 / span 1;
-        grid-column: 3 / 6;
+        grid-column: 5 / 6;
         display: inline-block;
       }
   }
-}
 }

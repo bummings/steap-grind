@@ -30,11 +30,16 @@ body {
   font-family: Didact Gothic;
   padding: 1rem 3rem;
   display: grid;
+  grid-template-columns: 6 / 1fr;
   grid-column: full-start / full-end;
   grid-auto-columns: 1fr;
   grid-column-gap: 2.5rem;
   justify-items: center;
   align-items: center; }
+  @media (max-width: 40em) {
+    .nav {
+      grid-column-gap: .5rem;
+      padding: 0; } }
   .nav__contact {
     grid-row: 1 / span 1;
     grid-column: 1 / 2;
@@ -49,33 +54,37 @@ body {
       .nav__contact {
         font-size: 1rem;
         grid-row: 2 / span 1;
-        grid-column: 2 / 4;
-        display: inline-block; } }
+        grid-column: 1 / 1;
+        justify-content: start; } }
   .nav__logo {
     grid-row: 1 / span 1;
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media (max-width: 40em) {
+      .nav__logo {
+        grid-row: 2 / 3;
+        grid-column: 2 / 5; } }
     .nav__logo--logo {
-      height: 85%;
-      width: 85%; }
-    .nav__logo__hours {
-      grid-row: 1 / span 1;
-      grid-column: 3 / 5;
-      font-size: 1.8rem; }
-      @media (max-width: 75em) {
-        .nav__logo__hours {
-          font-size: 1.6rem; } }
-      @media (max-width: 56.25em) {
-        .nav__logo__hours {
-          font-size: 1.2rem; } }
-      @media (max-width: 40em) {
-        .nav__logo__hours {
-          font-size: 1rem;
-          grid-row: 2 / span 1;
-          grid-column: 3 / 6;
-          display: inline-block; } }
+      height: 100%;
+      width: 100%; }
+  .nav__hours {
+    grid-row: 1 / span 1;
+    grid-column: 4 / 5;
+    font-size: 1.8rem; }
+    @media (max-width: 75em) {
+      .nav__hours {
+        font-size: 1.6rem; } }
+    @media (max-width: 56.25em) {
+      .nav__hours {
+        font-size: 1.2rem; } }
+    @media (max-width: 40em) {
+      .nav__hours {
+        font-size: 1rem;
+        grid-row: 2 / span 1;
+        grid-column: 5 / 6;
+        display: inline-block; } }
 
 .header {
   background-color: #F37878;
@@ -105,7 +114,7 @@ body {
 
 .hero {
   display: flex;
-  height: 115vh;
+  height: 100vh;
   background-image: url("../assets/img/pourover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -123,12 +132,17 @@ body {
       font-size: 4.8rem; } }
   @media (max-width: 75em) {
     .hero--welcome {
+      background-color: red;
       font-size: 4rem; } }
   @media (max-width: 56.25em) {
     .hero--welcome {
+      background-color: white;
+      color: black;
       font-size: 2.5rem; } }
   @media (max-width: 40em) {
     .hero--welcome {
+      background-color: black;
+      color: white;
       font-size: 1.5rem; } }
 
 .about {
@@ -261,40 +275,42 @@ body {
       padding-right: .5rem;
       padding-left: 1rem;
       display: block; } }
-  @media (max-width: 75em) {
-    .findus--map__map {
-      height: 311.2px;
-      width: 400px; } }
-  @media (max-width: 56.25em) {
-    .findus--map__map {
-      height: 252.85px;
-      width: 325px; } }
-  @media (max-width: 40em) {
-    .findus--map__map {
-      height: 155.6px;
-      width: 200px; } }
-  .findus--text {
-    padding: 5rem; }
+  .findus--map {
+    padding: 8rem; }
+    @media (max-width: 75em) {
+      .findus--map__map {
+        height: 311.2px;
+        width: 400px; } }
+    @media (max-width: 56.25em) {
+      .findus--map__map {
+        height: 252.85px;
+        width: 325px; } }
     @media (max-width: 40em) {
-      .findus--text {
-        padding: .5rem; } }
-    .findus--text__text {
-      font-size: 2.5rem; }
-      @media (max-width: 56.25em) {
-        .findus--text__text {
-          font-size: 3.2rem; } }
-      @media (max-width: 40em) {
-        .findus--text__text {
-          font-size: 1.5rem; } }
+      .findus--map__map {
+        height: 155.6px;
+        width: 200px; } }
+  @media (max-width: 40em) {
+    .findus--text {
+      padding: .5rem; } }
+  .findus--text__text {
+    font-size: 2.5rem; }
+    @media (max-width: 56.25em) {
+      .findus--text__text {
+        font-size: 3.2rem; } }
+    @media (max-width: 40em) {
+      .findus--text__text {
+        font-size: 1.5rem; } }
 
 .social {
-  background-color: #ECF5E5;
+  background-color: #18191D;
+  color: #ECF5E5;
   font-size: 4.8rem;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Didact Gothic;
+  background-image: url(../assets/img/tea2.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column; }
@@ -305,7 +321,8 @@ body {
         font-size: 2.4rem; } }
   .social--icons {
     display: flex;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    color: #ECF5E5; }
     .social--icons__icon {
       margin: 0 8rem; }
       @media (max-width: 56.25em) {

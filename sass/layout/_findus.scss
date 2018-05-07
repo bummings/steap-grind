@@ -21,27 +21,29 @@
     display: block;
   }
 
-  &--map__map {
-    @include respond(tab-land) {
-      height: 311.2px;
-      width: 400px;
-    }
+  &--map {
+    padding: 8rem;
 
-    @include respond(tab-port) {
-      height: 252.85px;
-      width: 325px;
-    }
+    &__map {
+        @include respond(tab-land) {
+        height: 311.2px;
+        width: 400px;
+      }
 
-    @include respond(phone) {
-      height: 155.6px;
-      width: 200px;
+      @include respond(tab-port) {
+        height: 252.85px;
+        width: 325px;
+      }
+
+      @include respond(phone) {
+        height: 155.6px;
+        width: 200px;
+      }
     }
   }
 
 
   &--text {
-    padding: 5rem;
-
     @include respond(phone) {
       padding: .5rem;
     }
