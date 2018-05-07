@@ -1,8 +1,7 @@
 .nav {
   background-color: $color-primary;
-  // height: 100px;
   font-family: $font-primary;
-  padding: 0, 3rem;
+  padding: 1rem 3rem;
 
   display: grid;
   grid-column: full-start / full-end;
@@ -11,32 +10,64 @@
   justify-items: center;
   align-items: center;
 
+
+
   &__contact {
-      grid-row: 1 / -1;
+      
+      grid-row: 1 / span 1;
       grid-column: 1 / 2;
-  }
+      font-size: 1.8rem;
 
-  &__logo {
-      grid-row: 1 / -1;
-      grid-column: 2 / span 3;
+      @include respond (tab-land) {
+        font-size: 1.6rem;
+      }
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include respond (tab-port) {
+        font-size: 1.2rem;
+      }
 
-      &--logo {
-        height: 85%;
-        width: 85%;
+      @include respond (phone) {
+        font-size: 1rem;
+        grid-row: 2 / span 1;
+        grid-column: 2 / 4;
+        display: inline-block;
       }
   }
 
-  &__hours {
-      grid-row: 1 / -1;
-      grid-column: 5 / 6;
-  }
+  &__logo {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 3;
 
-  &__icon {
-    height: 5%;
-    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--logo {
+      height: 85%;
+      width: 85%;
+    }
+
+
+    &__hours {
+      grid-row: 1 / span 1;
+      grid-column: 3 / 5;
+
+      font-size: 1.8rem;
+
+      @include respond (tab-land) {
+        font-size: 1.6rem;
+      }
+
+      @include respond (tab-port) {
+        font-size: 1.2rem;
+      }
+
+      @include respond (phone) {
+        font-size: 1rem;
+        grid-row: 2 / span 1;
+        grid-column: 3 / 6;
+        display: inline-block;
+      }
   }
+}
 }

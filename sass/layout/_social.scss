@@ -1,12 +1,12 @@
 .social {
-  background-color: greenyellow;
+  background-color: $color-offwhite;
   font-size: 4.8rem;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: $font-primary;
-  background-image: url(../assets/img/social-min.jpg);
+  // background-image: url(../assets/img/social-min.jpg);
   background-size: cover;
 
   display: flex;
