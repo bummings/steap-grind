@@ -19,6 +19,18 @@
     @include respond(phone) {
       font-size: 2.4rem;
     }
+
+    &__lets {
+      font-size: 9rem;
+
+      @include respond(tab-port) {
+        font-size: 6rem;
+      }
+
+      @include respond(phone) {
+        font-size: 4rem;
+      }
+    }
   }
 
   &--icons {

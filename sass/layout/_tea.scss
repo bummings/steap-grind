@@ -1,0 +1,19 @@
+.tea {
+
+  background-color: $color-offblack;
+  // background-image: url(../../assets/img/tea2.jpg);
+  background-size: 100%;
+
+  
+  color: $color-offblack;
+  padding: 4rem;
+  font-family: $font-primary; 
+  font-size: 3rem;
+  width: 100vw;
+  display: flex;
+  align-content: center;
+
+  &--slide {
+    
+  }
+}

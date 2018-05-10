@@ -194,14 +194,25 @@ body {
       .about--text {
         font-size: 1.5rem; } }
 
+.tea {
+  background-color: #18191D;
+  background-size: 100%;
+  color: #18191D;
+  padding: 4rem;
+  font-family: Didact Gothic;
+  font-size: 3rem;
+  width: 100vw;
+  display: flex;
+  align-content: center; }
+
 .menu {
+  background-color: #ECF5E5;
   display: grid;
   grid-column: center-start / center-end;
   padding: 10rem 7rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-row-gap: 1rem;
-  grid-column-gap: 8rem;
-  background-color: #F5FAF4; }
+  grid-column-gap: 8rem; }
   @media (max-width: 56.25em) {
     .menu {
       padding: 2rem 3rem; } }
@@ -255,6 +266,13 @@ body {
     @media (max-width: 40em) {
       .menu--item__item--description {
         font-size: 1.4rem; } }
+  .menu--item__sweets {
+    margin-top: 2rem;
+    height: 300px;
+    width: 300px; }
+    @media (max-width: 56.25em) {
+      .menu--item__sweets {
+        margin-top: -2px; } }
 
 .findus {
   background-color: #F37878;
@@ -319,6 +337,14 @@ body {
     @media (max-width: 40em) {
       .social--text {
         font-size: 2.4rem; } }
+    .social--text__lets {
+      font-size: 9rem; }
+      @media (max-width: 56.25em) {
+        .social--text__lets {
+          font-size: 6rem; } }
+      @media (max-width: 40em) {
+        .social--text__lets {
+          font-size: 4rem; } }
   .social--icons {
     display: flex;
     margin-bottom: 5rem;
