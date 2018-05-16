@@ -1,17 +1,26 @@
 .tea {
 
-  background-color: $color-white;
-  background-image: url(../../assets/img/sqiggle.jpg);
+  background-color: red;
+  background-image: url(../assets/img/sqiggle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 5px solid black;
   box-shadow: 5rem;
-  
+  // display: grid;
+  // grid-template-rows: 3 / 1fr;
+  // grid-template-columns: 3 / 1fr;
+
   color: $color-offblack;
   padding: 4rem;
   font-family: $font-primary; 
   font-size: 3rem;
   // width: 100vw;
-  display: flex;
+  // display: block;
   align-content: center;
 
-
+  &--individual {
+    height: 221px;
+    width: 221px;
+    margin: 2rem;
+  }
 }

@@ -222,16 +222,21 @@ body {
         font-size: 1.5rem; } }
 
 .tea {
-  background-color: #fff;
-  background-image: url(../../assets/img/sqiggle.jpg);
+  background-color: red;
+  background-image: url(../assets/img/sqiggle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 5px solid black;
   box-shadow: 5rem;
   color: #18191D;
   padding: 4rem;
   font-family: Didact Gothic;
   font-size: 3rem;
-  display: flex;
   align-content: center; }
+  .tea--individual {
+    height: 221px;
+    width: 221px;
+    margin: 2rem; }
 
 .menu {
   background-color: #ECF5E5;
@@ -305,8 +310,9 @@ body {
 .findus {
   background-color: #F37878;
   color: #18191D;
-  background-image: url(../../assets/img/fishmap.jpg);
+  background-image: url(../assets/img/fishmap.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-size: 100%;
   height: 75vh;
   font-family: Didact Gothic;
@@ -315,6 +321,9 @@ body {
   padding-left: 3rem;
   padding-right: 12rem;
   border: 5px solid #18191D; }
+  @media (max-width: 75em) {
+    .findus {
+      padding-right: 3rem; } }
   @media (max-width: 56.25em) {
     .findus {
       padding-right: 2rem;
@@ -333,19 +342,21 @@ body {
     @media (max-width: 56.25em) {
       .findus--map__map {
         height: 252.85px;
-        width: 325px; } }
+        width: 625px; } }
     @media (max-width: 40em) {
       .findus--map__map {
         height: 155.6px;
         width: 200px; } }
   .findus--text {
     background-color: #18191D;
-    border: 20px solid black; }
+    padding: 2rem;
+    border-radius: 5%; }
     @media (max-width: 40em) {
       .findus--text {
         padding: .5rem; } }
     .findus--text__text {
       font-size: 2.5rem;
+      background-color: #18191D;
       color: #ECF5E5; }
       @media (max-width: 56.25em) {
         .findus--text__text {
