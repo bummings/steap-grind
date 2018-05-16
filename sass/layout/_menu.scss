@@ -97,10 +97,6 @@
       @include respond(tab-port) {
         margin-top: -2px;
       }
-
-      @include respond(phone) {
-        
-      }
     }
   }
 }

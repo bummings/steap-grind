@@ -1,6 +1,9 @@
 .findus {
   background-color: $color-primary;
   color: $color-offblack;
+  background-image: url(../../assets/img/fishmap.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 75vh;
   // font-size: 3.6rem;
   font-family: $font-primary;
@@ -44,12 +47,18 @@
 
 
   &--text {
+
+    background-color: $color-offblack;
+    border: 20px solid black;
+
     @include respond(phone) {
       padding: .5rem;
     }
 
     &__text {
       font-size: 2.5rem;
+      // background-color: $color-offblack;
+      color: $color-offwhite;
 
       @include respond(tab-port) {
         font-size: 3.2rem;

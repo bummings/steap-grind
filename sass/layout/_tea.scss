@@ -1,19 +1,17 @@
 .tea {
 
-  background-color: $color-offblack;
-  // background-image: url(../../assets/img/tea2.jpg);
-  background-size: 100%;
-
+  background-color: $color-white;
+  background-image: url(../../assets/img/sqiggle.jpg);
+  border: 5px solid black;
+  box-shadow: 5rem;
   
   color: $color-offblack;
   padding: 4rem;
   font-family: $font-primary; 
   font-size: 3rem;
-  width: 100vw;
+  // width: 100vw;
   display: flex;
   align-content: center;
 
-  &--slide {
-    
-  }
+
 }
