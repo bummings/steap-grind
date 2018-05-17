@@ -12,7 +12,7 @@
   align-items: center;
   padding-left: 3rem;
   padding-right: 12rem;
-  border: 5px solid $color-offblack;
+  // border: 5px solid $color-offblack;
 
   @include respond (tab-land) {
     padding-right: 3rem;

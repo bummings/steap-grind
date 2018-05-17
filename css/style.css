@@ -226,6 +226,7 @@ body {
   background-image: url(../assets/img/sqiggle.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   border: 5px solid black;
   box-shadow: 5rem;
   color: #18191D;
@@ -307,6 +308,34 @@ body {
       .menu--item__sweets {
         margin-top: -2px; } }
 
+.gimme {
+  background-color: #F37878;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 56.25em) {
+    .gimme {
+      flex-direction: column; } }
+  .gimme--image {
+    margin-bottom: -3rem; }
+    @media (max-width: 56.25em) {
+      .gimme--image {
+        width: 75%;
+        height: 75%; } }
+  .gimme--text {
+    margin-top: 5rem;
+    text-transform: uppercase;
+    color: #ECF5E5;
+    font-size: 12rem;
+    font-family: Dense; }
+    @media (max-width: 56.25em) {
+      .gimme--text {
+        font-size: 8rem; } }
+    @media (max-width: 40em) {
+      .gimme--text {
+        font-size: 6rem; } }
+
 .findus {
   background-color: #F37878;
   color: #18191D;
@@ -319,8 +348,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 3rem;
-  padding-right: 12rem;
-  border: 5px solid #18191D; }
+  padding-right: 12rem; }
   @media (max-width: 75em) {
     .findus {
       padding-right: 3rem; } }
