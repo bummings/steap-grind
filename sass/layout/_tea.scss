@@ -7,9 +7,14 @@
   background-attachment: fixed;
   border: 5px solid black;
   box-shadow: 5rem;
-  // display: grid;
-  // grid-template-rows: 3 / 1fr;
-  // grid-template-columns: 3 / 1fr;
+  
+  display: grid;
+  grid-template-columns: 4 / 1fr;
+  grid-column: full-start / full-end;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 2.5rem;
+  justify-items: center;
+  align-items: center;
 
   color: $color-offblack;
   padding: 4rem;
@@ -23,5 +28,25 @@
     height: 221px;
     width: 221px;
     margin: 2rem;
+
+    &__1 {
+      grid-row: 1 / span 1;
+      grid-column: 1 / span 1;
+    }
+
+    &__2 {
+      grid-row: 1 / span 1;
+      grid-column: 2 / span 1;
+    }
+
+    &__3 {
+      grid-row: 1 / span 1;
+      grid-column: 3 / span 1;
+    }
+
+    &__4 {
+      grid-row: 1 / span 1;
+      grid-column: 4 / span 1;
+    }
   }
 }

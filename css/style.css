@@ -28,6 +28,21 @@ body {
 #align-right-override {
   text-align: right; }
 
+.focus {
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  transition: all .1s ease; }
+
+.focus:hover {
+  border: 10px solid #000;
+  border-radius: 50%; }
+
+.focus:not(:hover) {
+  border: 0px solid #000;
+  border-radius: 100%; }
+
 .nav {
   background-color: #F37878;
   font-family: Overpass Mono;
@@ -45,12 +60,14 @@ body {
   align-items: center; }
   @media (max-width: 56.25em) {
     .nav {
-      grid-column-gap: 0; } }
+      grid-column-gap: 0;
+      justify-items: auto; } }
   @media (max-width: 40em) {
     .nav {
       grid-column-gap: 0;
       font-size: .5rem;
-      padding: 0; } }
+      padding: 0;
+      justify-items: auto; } }
   .nav__contact {
     grid-row: 1 / span 1;
     grid-column: 1 / 2;
@@ -67,7 +84,7 @@ body {
         padding-top: 2rem; } }
     @media (max-width: 40em) {
       .nav__contact {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         grid-row: 2 / span 1;
         grid-column: 1 / 3;
         justify-content: start;
@@ -104,9 +121,9 @@ body {
         display: inline-block; } }
     @media (max-width: 40em) {
       .nav__hours {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         grid-row: 2 / span 1;
-        grid-column: 3 / 5;
+        grid-column: 3 / span 1;
         display: inline-block;
         grid-row: 2 / span 1;
         grid-column: 4 / 5; } }
@@ -229,6 +246,13 @@ body {
   background-attachment: fixed;
   border: 5px solid black;
   box-shadow: 5rem;
+  display: grid;
+  grid-template-columns: 4 / 1fr;
+  grid-column: full-start / full-end;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 2.5rem;
+  justify-items: center;
+  align-items: center;
   color: #18191D;
   padding: 4rem;
   font-family: Didact Gothic;
@@ -238,6 +262,18 @@ body {
     height: 221px;
     width: 221px;
     margin: 2rem; }
+    .tea--individual__1 {
+      grid-row: 1 / span 1;
+      grid-column: 1 / span 1; }
+    .tea--individual__2 {
+      grid-row: 1 / span 1;
+      grid-column: 2 / span 1; }
+    .tea--individual__3 {
+      grid-row: 1 / span 1;
+      grid-column: 3 / span 1; }
+    .tea--individual__4 {
+      grid-row: 1 / span 1;
+      grid-column: 4 / span 1; }
 
 .menu {
   background-color: #ECF5E5;
@@ -342,8 +378,6 @@ body {
   background-image: url(../assets/img/fishmap.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100%;
-  height: 75vh;
   font-family: Didact Gothic;
   display: flex;
   align-items: center;
@@ -370,11 +404,11 @@ body {
     @media (max-width: 56.25em) {
       .findus--map__map {
         height: 252.85px;
-        width: 625px; } }
+        width: 500px; } }
     @media (max-width: 40em) {
       .findus--map__map {
-        height: 155.6px;
-        width: 200px; } }
+        height: 200px;
+        width: 400px; } }
   .findus--text {
     background-color: #18191D;
     padding: 2rem;
@@ -391,7 +425,7 @@ body {
           font-size: 3.2rem; } }
       @media (max-width: 40em) {
         .findus--text__text {
-          font-size: 1.5rem; } }
+          font-size: 2.5rem; } }
 
 .social {
   background-color: #18191D;
@@ -419,7 +453,7 @@ body {
           font-size: 6rem; } }
       @media (max-width: 40em) {
         .social--text__lets {
-          font-size: 4rem; } }
+          font-size: 4.7rem; } }
   .social--icons {
     display: flex;
     margin-bottom: 5rem;
@@ -433,8 +467,8 @@ body {
           margin: 4rem; } }
       @media (max-width: 40em) {
         .social--icons__icon {
-          height: 43px;
-          width: 43px;
+          height: 63px;
+          width: 63px;
           margin: 2rem; } }
 
 .footer {

@@ -41,3 +41,21 @@ body {
 #align-right-override {
   text-align: right;
 }
+
+.focus {
+  -webkit-transition: all .1s ease;
+     -moz-transition: all .1s ease;
+       -o-transition: all .1s ease;
+      -ms-transition: all .1s ease;
+          transition: all .1s ease;
+}
+
+.focus:hover {
+  border: 10px solid #000;
+  border-radius: 50%;
+}
+
+.focus:not(:hover) {
+  border: 0px solid #000;
+  border-radius: 100%;
+}
