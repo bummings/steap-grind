@@ -42,20 +42,7 @@ body {
   text-align: right;
 }
 
-.focus {
-  -webkit-transition: all .1s ease;
-     -moz-transition: all .1s ease;
-       -o-transition: all .1s ease;
-      -ms-transition: all .1s ease;
-          transition: all .1s ease;
+.general-margin {
+  margin: 2.4rem;
 }
 
-.focus:hover {
-  border: 10px solid #000;
-  border-radius: 50%;
-}
-
-.focus:not(:hover) {
-  border: 0px solid #000;
-  border-radius: 100%;
-}

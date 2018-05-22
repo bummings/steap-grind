@@ -1,0 +1,52 @@
+/* 
+.one{
+  width:221px;
+  height:221px;
+  border: 4px solid red;
+  color:white;
+} */
+
+.image{
+  width:221px;
+  height:221px;
+}
+.over {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 221px;
+  height: 221px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.one:hover .overlay {
+  opacity: 0.50;
+}
+
+.text {
+  color: white;
+  font-size: 2.7rem;
+  font-family: $primary-font;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

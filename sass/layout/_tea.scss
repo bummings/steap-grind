@@ -10,6 +10,10 @@
   
   display: grid;
   grid-template-columns: 4 / 1fr;
+
+  @include respond(tab-land) {
+    grid-template-columns: 3 / 1fr;
+  }
   grid-column: full-start / full-end;
   grid-auto-columns: 1fr;
   grid-column-gap: 2.5rem;
@@ -27,7 +31,6 @@
   &--individual {
     height: 221px;
     width: 221px;
-    margin: 2rem;
 
     &__1 {
       grid-row: 1 / span 1;
