@@ -16,17 +16,23 @@
   }
 
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-row-gap: 1rem;
+  grid-row-gap: 3rem;
   grid-column-gap: 8rem;
+
+  @include respond(phone) {
+    grid-row-gap: 1rem;
+  }
   
+  
+
   &--item {
 
     &__section {
-      // font-family: $font-secondary;
       font-family: 'Dense';
       text-transform: uppercase;
       color: $color-secondary;
-      font-size: 7.3rem;
+      font-size: 9.3rem;
+      // justify-self: center;
 
       @include respond(tab-port) {
         font-size: 5rem;
