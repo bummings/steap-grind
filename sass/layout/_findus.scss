@@ -20,6 +20,7 @@
 
   @include respond(tab-port) {
     padding-right: 2rem;
+    padding-bottom: 5rem;
     display: block;
   }
 
@@ -33,6 +34,10 @@
     padding: 8rem;
 
     &__map {
+
+      height: 400px;
+      width: 500px;
+
         @include respond(tab-land) {
         height: 311.2px;
         width: 400px;
@@ -40,12 +45,15 @@
 
       @include respond(tab-port) {
         height: 252.85px;
-        width: 500px;
+        width: 100%;
+        padding: 0;
       }
 
       @include respond(phone) {
         height: 200px;
-        width: 400px;
+        // width: 100vw;
+        padding: 1px;
+        margin: 0 auto;
       }
     }
   }
@@ -53,8 +61,8 @@
 
   &--text {
 
-    background-color: $color-offblack;
-    padding: 2rem;
+    background-color: rgba(24, 25, 29, 0.85);
+    padding: 5rem;
     border-radius: 5%;
 
     @include respond(phone) {
@@ -63,15 +71,17 @@
 
     &__text {
       font-size: 2.5rem;
-      background-color: $color-offblack;
+      // background-color: $color-offblack;
       color: $color-offwhite;
 
       @include respond(tab-port) {
         font-size: 3.2rem;
+        padding: 3rem;
       }
 
       @include respond(phone) {
         font-size: 2.5rem;
+        padding: 3rem;
       }
     }
 

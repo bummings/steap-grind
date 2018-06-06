@@ -1,5 +1,9 @@
 .menu {
 
+  &__hr {
+    grid-column: 1 / -1;
+  }
+
   // height: 100vh;
   //can't do that with grid, cuz-
   background-color: $color-offwhite;
@@ -21,6 +25,7 @@
 
   @include respond(phone) {
     grid-row-gap: 1rem;
+    padding-top: 8rem;
   }
   
   
@@ -30,9 +35,10 @@
     &__section {
       font-family: 'Dense';
       text-transform: uppercase;
-      color: $color-secondary;
-      font-size: 9.3rem;
-      // justify-self: center;
+      background-color: $color-primary;
+      color: $color-offwhite;
+      font-size: 8.3rem;
+      
 
       @include respond(tab-port) {
         font-size: 5rem;
@@ -47,6 +53,7 @@
       @include respond(tab-port) {
         margin-bottom: 4rem;
       }
+
 
       &--name {
         // font-family: $font-primary;
