@@ -1,16 +1,14 @@
 .tea {
 
-  background-color: red;
+  background-color: darkred;
   background-image: url(../assets/img/sqiggle.jpg);
   // background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  border: 5px solid black;
   box-shadow: 5rem;
   
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  // grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   @include respond(tab-land) {
     grid-template-columns: repeat(3, 1fr);
@@ -18,14 +16,11 @@
 
   @include respond(tab-port) {
     grid-column-gap: 0rem;
-    //smaller teas
   }
 
   @include respond(phone) {
     grid-template-columns: repeat(2, 1fr);
   }
-  // grid-column: full-start / full-end;
-  // grid-auto-columns: 1fr;
 
   
   grid-column-gap: 2.5rem;
@@ -56,21 +51,6 @@
       // width: 100px;
     }
 
-
-    // &__1 {
-    //   grid-row: 3 / span 1;
-    //   grid-column: 1 / span 1;
-    // }
-
-    // &__2 {
-    //   grid-row: 1 / span 1;
-    //   grid-column: 2 / span 1;
-    // }
-
-    // &__3 {
-    //   grid-row: 1 / span 1;
-    //   grid-column: 3 / span 1;
-    // }
-
   }
 }
+

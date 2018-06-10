@@ -46,10 +46,12 @@
   }
 
   &--address {
+
+    font-size: 3rem;
+    text-align: end;
     
-    @include respond(phone) {
-      text-transform: uppercase;
+    @include respond(tab-port) {
+      font-size: 1.5rem;
     }
-    
   }
 }

@@ -1,6 +1,7 @@
 .findus {
   background-color: $color-primary;
   color: $color-offblack;
+  border: 5px solid black;
   background-image: url(../assets/img/fishmap.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,6 +10,7 @@
   // font-size: 3.6rem;
   font-family: $font-primary;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-left: 3rem;
   padding-right: 12rem;
@@ -25,35 +27,45 @@
   }
 
   @include respond(phone) {
-    padding-right: .5rem;
-    padding-left: 1rem;
+    // padding-right: .5rem;
+    // padding-left: 1rem;
     display: block;
   }
 
   &--map {
     padding: 8rem;
 
+    @include respond(phone) {
+      padding: 0;
+    }
+
     &__map {
 
       height: 400px;
       width: 500px;
+      
+      
 
-        @include respond(tab-land) {
+      @include respond(tab-land) {
         height: 311.2px;
         width: 400px;
       }
 
       @include respond(tab-port) {
-        height: 252.85px;
-        width: 100%;
-        padding: 0;
+        height: 400px;
+        width: 200rem;
+        margin: 0 auto;
+        padding: 5rem;
       }
 
       @include respond(phone) {
-        height: 200px;
-        // width: 100vw;
-        padding: 1px;
-        margin: 0 auto;
+        height: 20rem;
+        width: 30rem;
+        padding: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
       }
     }
   }
@@ -63,6 +75,8 @@
 
     background-color: rgba(24, 25, 29, 0.85);
     padding: 5rem;
+
+
     border-radius: 5%;
 
     @include respond(phone) {
@@ -71,16 +85,15 @@
 
     &__text {
       font-size: 2.5rem;
-      // background-color: $color-offblack;
       color: $color-offwhite;
 
       @include respond(tab-port) {
-        font-size: 3.2rem;
-        padding: 3rem;
+        font-size: 2.2rem;
+        
       }
 
       @include respond(phone) {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         padding: 3rem;
       }
     }

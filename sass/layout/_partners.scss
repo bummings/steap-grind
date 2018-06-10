@@ -1,16 +1,28 @@
 .partners {
   background-color: $color-offblack;
-  background-attachment: fixed;
-  background-image: url(../../assets/img/pattern.jpg);
-
+  border: 8px solid $color-offwhite;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
+  &--img {
+    text-align: center;
+  }
 
   &--logo {
-    width: 200px;
-    border: 3px solid #b4da55;
-    margin: 5rem;
+    width: 150px;
+    margin: 1.5rem;
+  }
+
+
+  &--text {
+    font-size: 12rem;
+    font-family: Dense;
+    
+    text-transform: uppercase;
+    text-align: center;
   }
 }
+
+

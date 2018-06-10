@@ -1,5 +1,5 @@
 .about {
-  background-color: $color-white;
+  background-color: $color-offwhite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,8 +7,7 @@
   padding: 4rem 5rem;
 
   @include respond (tab-port) {
-    padding: .5rem;
-    display: block;
+    padding: 2rem;
   }
 
   @include respond (phone) {
@@ -39,8 +38,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
         padding: 2rem;
         
       }
@@ -60,7 +59,8 @@
     }
 
     @include respond(phone) {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+      padding: 2rem 3rem;
     }
   }
 
