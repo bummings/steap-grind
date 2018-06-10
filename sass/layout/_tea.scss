@@ -1,56 +1,57 @@
 .tea {
-
-  background-color: darkred;
-  background-image: url(../assets/img/sqiggle.jpg);
-  // background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  box-shadow: 5rem;
-  
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  @include respond(tab-land) {
+    background-color: darkred;
+    background-image: url(../assets/img/sqiggle.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  @include respond(tab-port) {
-    grid-column-gap: 0rem;
-  }
-
-  @include respond(phone) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  
-  grid-column-gap: 2.5rem;
-  justify-items: center;
-  align-items: center;
-
-  color: $color-offblack;
-  padding: 4rem;
-  @include respond(tab-port) {
-    padding: 0;
-  }
-
-  font-family: $font-primary; 
-  font-size: 3rem;
-  // align-content: center;
-
-  &--individual {
-    height: 221px;
-    width: 221px;
+    grid-row-gap: 2rem;
+    overflow: hidden;
+    
+    @include respond(tab-land) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     @include respond(tab-port) {
-      height: 160px;
-      width: 160px;
+        grid-column-gap: 0rem;
     }
 
     @include respond(phone) {
-      // height: 100px;
-      // width: 100px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 0;
+        grid-column-gap: 0;
     }
 
-  }
-}
+    grid-column-gap: 2.5rem;
+    justify-items: center;
+    align-items: center;
+    color: $color-offblack;
+    padding: 4rem;
+    @include respond(tab-port) {
+        padding: 0;
+    }
+    // font-family: $font-primary;
+    // font-size: 3rem; 
 
+    &--individual {
+        height: 221px;
+        width: 221px;
+    
+        @include respond(tab-port) {
+            height: 160px;
+            width: 160px;
+        }
+    
+        @include respond(phone) {
+            height: 130px;
+            width: 130px;
+        }
+    }
+
+    &--hide {
+      @include respond(phone) {
+        display: none;
+        padding: 0;
+      }
+    }
+}

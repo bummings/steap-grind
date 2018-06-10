@@ -9,28 +9,6 @@
 html {
   font-size: 62.5%;
   // 1 rem = 10px; 10px/16x = 62.5
-
-
-  @include respond(laptop) {
-    // font-size: 3rem;
-  }
-
-  @include respond(tab-land) {
-    // color: red
-  }
-
-  @include respond(tab-port) {
-    // color: green;
-    
-  }
-
-  @include respond(phone) {
-    // color: blue;
-  }
-
-  @include respond(big-desktop) {
-    // font-size: 75% !important;
-  }
 }
 
 body {
@@ -54,3 +32,10 @@ hr {
   color: $color-primary;
   background-color: $color-primary;
 }
+
+.overflow {
+  overflow: hidden;
+}
+
+
+
