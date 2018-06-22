@@ -5,6 +5,7 @@
   align-items: center;
   border: 5px solid black;
   padding: 4rem 5rem;
+  letter-spacing: 1.3px;
 
   @include respond (tab-port) {
     padding: 2rem;

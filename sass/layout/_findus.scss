@@ -27,13 +27,15 @@
   }
 
   @include respond(phone) {
-    // padding-right: .5rem;
-    // padding-left: 1rem;
     display: block;
   }
 
   &--map {
-    padding: 8rem;
+    padding: 7rem;
+
+    @include respond(tab-port) {
+      padding: 6rem;
+    }
 
     @include respond(phone) {
       padding: 0;
@@ -45,16 +47,16 @@
       width: 500px;
       
       @include respond(tab-land) {
-        height: 311.2px;
+        height: 351.2px;
         width: 400px;
       }
 
       @include respond(tab-port) {
         height: 400px;
-        width: 600px;
+        width: 500px;
         margin-left: auto;
         margin-right: auto;
-        padding: 5rem;
+        padding: 1rem;
       }
 
       @include respond(phone) {
@@ -81,11 +83,15 @@
     }
 
     &__text {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       color: $color-offwhite;
 
+      @include respond(tab-land) {
+        font-size: 2.1rem;
+      }
+
       @include respond(tab-port) {
-        font-size: 2.2rem;
+        font-size: 2rem;
         
       }
 

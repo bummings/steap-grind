@@ -1,18 +1,15 @@
 .gimme {
   background-color: $color-primary;
-  // height: 30rem;
   padding: 5rem;
   display: flex; 
   justify-content: center;
   align-items: center;
-  // border: 5px solid black;
 
   @include respond(tab-port) {
     flex-direction: column;
   }
 
   &--image {
-    //hm
     margin-bottom: -3rem;
 
     @include respond (tab-port) {
@@ -21,8 +18,7 @@
     }
 
     @include respond (phone) {
-      // width: 50%;
-      // height: 50%;
+      //hm
     }
   }
 
@@ -30,15 +26,17 @@
     margin-top: 5rem;
     text-transform: uppercase;
     color: $color-offwhite;
-    font-size: 12rem;
-    font-family: Dense;
+    text-align: right;
+    font-size: 8rem;
+    font-family: sans-serif;
 
     @include respond (tab-port) {
       font-size: 8rem;
+      text-align: center;
     }
 
     @include respond (phone) {
-      font-size: 3.5rem;
+      font-size: 4.5rem;
     }
   }
 }

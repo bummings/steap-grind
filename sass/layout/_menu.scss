@@ -1,15 +1,10 @@
 .menu {
   border: 5px solid black;
-  
-  &--salads {
-    text-align: right;
-    padding: 1rem;
-  }
-
   background-color: $color-offwhite;
   display: grid;
   grid-column: center-start / center-end;
   padding: 10rem 7rem;
+  font-family: $font-primary;
 
   @include respond(tab-port) {
     padding: 2rem 3rem;
@@ -21,7 +16,7 @@
 
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-row-gap: 3rem;
-  grid-column-gap: 8rem;
+  grid-column-gap: 5.5rem;
 
   @include respond(phone) {
     grid-row-gap: 1rem;
@@ -33,15 +28,17 @@
 
     &__section {
       
-      font-family: 'Dense';
+      // font-family: $font-primary;
       text-transform: uppercase;
       background-color: $color-primary;
       color: $color-offwhite;
-      font-size: 8.3rem;
+      font-size: 4rem;
+      font-weight: 600;
+      font-style: italic;
       
 
       @include respond(tab-port) {
-        font-size: 8rem;
+        font-size: 4rem;
       }
 
       @include respond(phone) {
@@ -51,8 +48,10 @@
     }
 
     &__item {
+      margin-bottom: 3rem;
+
       @include respond(tab-port) {
-        margin-bottom: 5rem;
+        margin-bottom: 2.5rem;
       }
 
       &__space {
@@ -63,28 +62,26 @@
 
 
       &--name {
-        // font-family: $font-primary;
-        font-family: 'Dense';
         text-transform: uppercase;
-        font-size: 5.3rem;
+        font-size: 2.8rem;
 
         @include respond(tab-port) {
-          font-size: 5.5rem;
+          font-size: 2.2rem;
         }
 
         @include respond(phone) {
-          font-size: 3.2rem;
+          
         }
       }
 
       &--price {
-        margin-left: 3.5rem;
+        margin-left: 1.5rem;
         color: $color-primary;
-        font-size: 3.6rem;
+        font-size: 3rem;
 
         @include respond(tab-port) {
           margin-left: 1.5rem;
-          font-size: 4rem;
+          font-size: 2.3rem;
           
         }
 
@@ -95,7 +92,6 @@
       }
 
       &--description {
-        font-family: $font-primary;
         font-size: 2rem;
         color: $color-grey;
         padding-right: 2rem;
@@ -105,7 +101,7 @@
         }
 
         @include respond (phone) {
-          font-size: 1.5rem;
+          font-size: 1.8rem;
         }
       }
     }
@@ -122,10 +118,21 @@
       }
     }
   }
+
+  &--salads {
+    text-align: right;
+    padding: 1rem;
+  }
+
+  &--hr {
+    margin-top: 5rem;
+
+    // @include respond(laptop) {
+
+    // }
+    grid-column: 1 / -1;
+  }
+
+
 }
 
-hr {
-  margin-top: 5rem;
-  grid-column: 1 / -1;
-  width: 100%;
-}
